@@ -1,0 +1,24 @@
+// package.json
+{
+  "name": "simple-multiplayer-game",
+  "version": "1.0.0",
+  "description": "Простая браузерная мультиплеерная игра",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js", // Команда для запуска на хостинге
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocket",
+    "game",
+    "multiplayer",
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.11.0"
+  }
+}
