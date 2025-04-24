@@ -8,8 +8,18 @@
 </head>
 <body>
     <h1>Простая Мультиплеерная Игра</h1>
-    <p>Используйте стрелки для передвижения.</p>
-    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <p>Используйте стрелки для передвижения. Доберитесь как можно правее!</p>
+
+    <div class="game-container">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="leaderboard">
+            <h2>Лидеры (по X)</h2>
+            <ol id="leaderboard-list">
+                <!-- Leaderboard items will be populated here -->
+                <li>Загрузка...</li>
+            </ol>
+        </div>
+    </div>
 
     <script src="client.js"></script>
 </body>
