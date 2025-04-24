@@ -3,10 +3,70 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    background-color: #e9e9e9; /* Slightly different background */
+}
+
+.game-container {
+    display: flex; /* Arrange canvas and leaderboard side-by-side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between canvas and leaderboard */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
 }
 
 canvas {
     border: 1px solid black;
     background-color: #f0f0f0;
+    display: block; /* Remove potential extra space below */
+}
+
+#leaderboard {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    background-color: #fff;
+    min-width: 180px; /* Minimum width */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#leaderboard h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+#leaderboard ol {
+    list-style-type: none; /* Remove default numbering */
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboard li {
+    padding: 4px 0;
+    font-size: 0.9em;
+    border-bottom: 1px dashed #eee; /* Separator */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out name and score */
+}
+#leaderboard li:last-child {
+    border-bottom: none;
+}
+
+#leaderboard li .player-id {
+    font-weight: bold;
+    margin-right: 10px; /* Space after player ID/color */
+    display: inline-block; /* Needed for margin */
+    /* Use player color */
+}
+#leaderboard li .player-score {
+   color: #333;
+}
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
 }
